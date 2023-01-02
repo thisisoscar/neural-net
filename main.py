@@ -58,7 +58,7 @@ class NeuralNetwork:
         delta_b_h = self.learning_rate * hidden_error * sigmoid_prime(hidden)
         self.b_h += delta_b_h
 
-    def unveil(self):
+    def show(self):
         print('shape:', self.inputs_size, self.hidden_size, self.output_size)
         print('\nweights input -> hidden\n', self.w_i_h)
         print('\nbiases input -> hidden\n', self.b_h)
